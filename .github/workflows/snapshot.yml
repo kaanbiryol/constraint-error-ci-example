@@ -8,14 +8,13 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: create lldbinit file
-        run: make lldbinit
-      - name: run tests
+      - name: make lldb command
+        run: Make lldb_command
+      - name: initialize lldb
+        run: lldb --source lldb-command &
+      - name: Run tests
         run: make test
-      - name: Danger action
-        uses: MeilCli/danger-action@v5.6.0
-        with:
-          danger_file: 'Dangerfile'
-          danger_id: 'danger-pr'
+      - name: Danger
+        run: brew install danger/tap/danger-swift && danger-swift ci
         env:
-          DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
