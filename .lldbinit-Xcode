@@ -1,0 +1,13 @@
+br set -n UIViewAlertForUnsatisfiableConstraints --auto-continue true
+br command add -s python
+thread = frame.GetThread()
+file_name = '/Users/kaanbiryol/Documents/Projects/constraint-error-ci-example/test.txt'
+f = open(file_name, 'w+')
+for fr in thread.frames:
+    function = fr.GetFunctionName()
+    f.write(function)
+f.close()
+return False
+DONE
+process kill
+continue

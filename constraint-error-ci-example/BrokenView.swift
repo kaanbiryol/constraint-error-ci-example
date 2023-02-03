@@ -27,7 +27,7 @@ final class BrokenView: UIView {
     init() {
         super.init(frame: .zero)
         backgroundColor = .gray
-        
+        translatesAutoresizingMaskIntoConstraints  = false
         addSubview(label)
         
         NSLayoutConstraint.activate([
@@ -35,16 +35,14 @@ final class BrokenView: UIView {
             label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             label.topAnchor.constraint(equalTo: topAnchor, constant: 20),
             label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
-            // Set a breaking constraint intentionally
+            // Set a breaking constraint
             label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40),
         ])
-        
     }
     
     required init?(coder: NSCoder) {
         fatalError()
     }
-    
 }
 
 

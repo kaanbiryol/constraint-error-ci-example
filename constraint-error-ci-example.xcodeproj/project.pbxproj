@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6752475D298D030200C9168B /* constraint_error_ci_snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6752475C298D030200C9168B /* constraint_error_ci_snapshots.swift */; };
+		6752475D298D030200C9168B /* BrokenViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6752475C298D030200C9168B /* BrokenViewTests.swift */; };
 		67524765298D031300C9168B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 67524764298D031300C9168B /* SnapshotTesting */; };
 		67524767298D034100C9168B /* BrokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524766298D034100C9168B /* BrokenView.swift */; };
 		67A176AC298D0B910030D7AE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A176AB298D0B910030D7AE /* App.swift */; };
@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		6752475A298D030200C9168B /* constraint-error-ci-snapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "constraint-error-ci-snapshots.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6752475C298D030200C9168B /* constraint_error_ci_snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constraint_error_ci_snapshots.swift; sourceTree = "<group>"; };
+		6752475C298D030200C9168B /* BrokenViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenViewTests.swift; sourceTree = "<group>"; };
 		67524766298D034100C9168B /* BrokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenView.swift; sourceTree = "<group>"; };
 		67A176AB298D0B910030D7AE /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		67ED3A3B298D020C008B29E4 /* constraint-error-ci-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "constraint-error-ci-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +55,7 @@
 		6752475B298D030200C9168B /* constraint-error-ci-snapshots */ = {
 			isa = PBXGroup;
 			children = (
-				6752475C298D030200C9168B /* constraint_error_ci_snapshots.swift */,
+				6752475C298D030200C9168B /* BrokenViewTests.swift */,
 			);
 			path = "constraint-error-ci-snapshots";
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6752475D298D030200C9168B /* constraint_error_ci_snapshots.swift in Sources */,
+				6752475D298D030200C9168B /* BrokenViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"constraint-error-ci-example/Preview Content\"";
@@ -411,6 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "constraint-error-ci-example/constraint_error_ci_example.entitlements";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"constraint-error-ci-example/Preview Content\"";

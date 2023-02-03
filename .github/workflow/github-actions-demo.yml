@@ -1,0 +1,11 @@
+name: PR Checks
+on: [pull_request]
+jobs:
+  check:
+    runs-on: macos-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: create lldbinit file
+        run: make lldbinit
+      - 
