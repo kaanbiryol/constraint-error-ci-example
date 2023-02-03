@@ -1,5 +1,5 @@
 lldbinit:
-	cp .lldbinit-Xcode ~
+	python3 replace.py && cp .lldbinit-Xcode ~
 
 test:
 	xcodebuild \
