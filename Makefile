@@ -1,5 +1,5 @@
-lldbinit:
-	python3 replace.py && cp .lldbinit-Xcode ~
+make lldb_command:
+	python3 set-file-path.py
 
 test:
 	xcodebuild \
