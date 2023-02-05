@@ -1,8 +1,10 @@
 process attach --name "constraint-error-ci-example" --waitfor
 br set -n UIViewAlertForUnsatisfiableConstraints --auto-continue true
 br command add -s python
+import os
 thread = frame.GetThread()
-file_name = ${FILE_PATH}
+file_name = os.environ["GITHUB_WORKSPACE"] + "/brokenConstraints.txt"
+print(file_name)
 f = open(file_name, 'a+')
 for fr in thread.frames:
     fileName = fr.GetLineEntry().GetFileSpec().GetFilename()

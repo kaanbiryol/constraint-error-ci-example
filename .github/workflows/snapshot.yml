@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: make lldb command
-        run: Make lldb_command
       - name: initialize lldb
         run: lldb --source lldb-command &
       - name: Run tests
@@ -17,4 +15,4 @@ jobs:
       - name: Danger
         run: brew install danger/tap/danger-swift && danger-swift ci
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
